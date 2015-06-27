@@ -8,6 +8,13 @@
 
 #import "LZBaseViewController.h"
 
-@interface LZContactViewController : LZBaseViewController
+typedef NS_ENUM(NSInteger, ContactPageType) {
+    ContactPageTypeEmail = 1,
+};
 
+typedef void (^SelectContacts) (NSArray *);
+
+@interface LZContactViewController : LZBaseViewController
+@property (nonatomic, assign) ContactPageType pageType;
+@property (nonatomic, strong) SelectContacts selectContactsBlock;
 @end

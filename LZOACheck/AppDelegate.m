@@ -13,6 +13,7 @@
 #import "RDVTabBarItem.h"
 #import "LZLoginViewController.h"
 #import "LZSettings.h"
+#import "LZNavigationController.h"
 @interface AppDelegate ()<RDVTabBarControllerDelegate>
 @property (nonatomic, strong) void (^selectNavTabBlock)(void) ;
 @end
@@ -29,12 +30,15 @@
     self.window.backgroundColor = [UIColor whiteColor];
     
     self.tabbarController = [[RDVTabBarController alloc] init];
+//    
+//    UINavigationBar *bar = [UINavigationBar appearance];
+//    bar.tintColor = [UIColor redColor];
     
-    UINavigationController *informationNav = [[UINavigationController alloc] initWithRootViewController:[[LZInfomationViewController alloc] init]];
+    LZNavigationController *informationNav = [[LZNavigationController alloc] initWithRootViewController:[[LZInfomationViewController alloc] init]];
     
-    UINavigationController *businessQueryNav = [[UINavigationController alloc] initWithRootViewController:[[LZBusinessQueryViewController alloc] init]];
+    LZNavigationController *businessQueryNav = [[LZNavigationController alloc] initWithRootViewController:[[LZBusinessQueryViewController alloc] init]];
     
-    UINavigationController *administativeBusinessNav = [[UINavigationController alloc] initWithRootViewController:[[LZAdministrativeBusinessViewController alloc] init]];
+    LZNavigationController *administativeBusinessNav = [[LZNavigationController alloc] initWithRootViewController:[[LZAdministrativeBusinessViewController alloc] init]];
     
     self.tabbarController.viewControllers = @[informationNav, businessQueryNav, administativeBusinessNav];
     self.tabbarController.delegate = self;
@@ -86,7 +90,7 @@
     loginVC.LoginSucceed = ^(void) {
         self.tabbarController.selectedIndex = 2;
     };
-    UINavigationController *loginNav = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    LZNavigationController *loginNav = [[LZNavigationController alloc] initWithRootViewController:loginVC];
     [self.tabbarController presentViewController:loginNav animated:YES completion:nil];
 }
 

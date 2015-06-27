@@ -7,7 +7,7 @@
 //
 
 #import "DDTabControl.h"
-
+#import "LZCoreMacros.h"
 
 @interface DDTabControl()
 {
@@ -160,7 +160,7 @@
         _bgImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         _bgImgView.layer.cornerRadius = 5;
         _bgImgView.layer.masksToBounds = YES;
-        _bgImgView.backgroundColor = [UIColor blueColor];
+        _bgImgView.backgroundColor = [UIColor redColor];
         [self addSubview:_bgImgView];
 
         
@@ -168,7 +168,7 @@
         [self addSubview:titleLabel];
         titleLabel.textAlignment = NSTextAlignmentCenter;
         titleLabel.backgroundColor = [UIColor clearColor];
-        titleLabel.textColor = [UIColor whiteColor];
+        titleLabel.textColor = TEXT_COLOR ;
         titleLabel.font = [UIFont boldSystemFontOfSize:18];
         
         
@@ -196,7 +196,7 @@
 -(void)setSelected:(BOOL)selected{
     if (selected) {
         [UIView animateWithDuration:0.3 animations:^{
-            titleLabel.textColor = [UIColor redColor];
+            titleLabel.textColor = [UIColor whiteColor];
             titleLabel.transform =CGAffineTransformMakeScale(1.1,1.1);
             
         } completion:^(BOOL finished) {
@@ -204,7 +204,7 @@
         }];
     }else{
         [UIView animateWithDuration:0.3 animations:^{
-            titleLabel.textColor = [UIColor whiteColor];
+            titleLabel.textColor = TEXT_COLOR;
             titleLabel.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
             _bgImgView.hidden = YES;

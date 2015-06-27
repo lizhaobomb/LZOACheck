@@ -43,6 +43,7 @@
 		04C361641B04D6BA00E08865 /* UIImage+ImageFrameCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C361601B04D6BA00E08865 /* UIImage+ImageFrameCategory.m */; };
 		04C361651B04D6BA00E08865 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C361621B04D6BA00E08865 /* UIViewExt.m */; };
 		04C361661B04D6BA00E08865 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C361621B04D6BA00E08865 /* UIViewExt.m */; };
+		04DAE9791B3EB3E300CE30D5 /* LZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAE9781B3EB3E300CE30D5 /* LZNavigationController.m */; };
 		04F43C111B0A0AE500ED2969 /* LZUserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F43C101B0A0AE500ED2969 /* LZUserDataModel.m */; };
 		04F43C121B0A0AE500ED2969 /* LZUserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F43C101B0A0AE500ED2969 /* LZUserDataModel.m */; };
 		04F43C151B0A155D00ED2969 /* LZSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F43C141B0A155D00ED2969 /* LZSettings.m */; };
@@ -125,6 +126,8 @@
 		04C361601B04D6BA00E08865 /* UIImage+ImageFrameCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageFrameCategory.m"; sourceTree = "<group>"; };
 		04C361611B04D6BA00E08865 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
 		04C361621B04D6BA00E08865 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		04DAE9771B3EB3E300CE30D5 /* LZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZNavigationController.h; sourceTree = "<group>"; };
+		04DAE9781B3EB3E300CE30D5 /* LZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZNavigationController.m; sourceTree = "<group>"; };
 		04F43C0F1B0A0AE500ED2969 /* LZUserDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZUserDataModel.h; sourceTree = "<group>"; };
 		04F43C101B0A0AE500ED2969 /* LZUserDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZUserDataModel.m; sourceTree = "<group>"; };
 		04F43C131B0A155D00ED2969 /* LZSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZSettings.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 		048FB9D41B0646A100554E99 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				04DAE9771B3EB3E300CE30D5 /* LZNavigationController.h */,
+				04DAE9781B3EB3E300CE30D5 /* LZNavigationController.m */,
 				04C152941B3D881600D8FEF5 /* HeadView.m */,
 				04C152951B3D881600D8FEF5 /* HeadView.h */,
 				048FB9D51B0646BA00554E99 /* DDTabControl */,
@@ -491,6 +496,7 @@
 				04C152901B3D87FA00D8FEF5 /* LZPlatformInfoViewController.m in Sources */,
 				04F43C111B0A0AE500ED2969 /* LZUserDataModel.m in Sources */,
 				04C152881B3D87FA00D8FEF5 /* LZContactViewController.m in Sources */,
+				04DAE9791B3EB3E300CE30D5 /* LZNavigationController.m in Sources */,
 				04C1529C1B3D962C00D8FEF5 /* LZContactDetailViewController.m in Sources */,
 				F11F7AC01B0B18BD0055498F /* LZUtils.m in Sources */,
 				04C152851B3D87FA00D8FEF5 /* LZAdministrativeBusinessViewController.m in Sources */,

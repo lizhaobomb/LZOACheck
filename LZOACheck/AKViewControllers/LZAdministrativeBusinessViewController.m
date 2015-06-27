@@ -14,6 +14,7 @@
 #import "LZToDosViewController.h"
 #import "LZMonitorStatisticViewController.h"
 #import "LZContactViewController.h"
+#import "LZCoreMacros.h"
 
 @interface LZAdministrativeBusinessViewController () <DDPagedScrollViewDelegate>{
     DDPagedScrollView *_scrollView;
@@ -48,7 +49,7 @@
     
     _tabControl.itemTitles = @[@"行政事项",@"监察统计", @"邮件", @"通讯录"];
     
-    _tabControl.backgroundColor = [UIColor lightGrayColor];
+    _tabControl.backgroundColor = UIColorFromRGB(0xededed);
     [_tabControl addTarget:self action:@selector(controlValueChanged:) forControlEvents:UIControlEventValueChanged];
     
     
@@ -72,8 +73,8 @@
 
 - (UIView *)pagedView:(DDPagedScrollView *)pagedView viewForPageAtIndex:(NSUInteger)index{
     AKLog(@"%zd",index);
-    pagedView.layer.borderColor = [UIColor redColor].CGColor;
-    pagedView.layer.borderWidth = 1;
+//    pagedView.layer.borderColor = [UIColor redColor].CGColor;
+//    pagedView.layer.borderWidth = 1;
     if (index == 0) {
         _todosVC.view = (UIView *)[pagedView dequeueReusableViewWithTag:200];
         if (!_todosVC.view) {
@@ -92,6 +93,7 @@
             _monitorStatisticVC.view.tag = 201;
             [self addChildViewController:_monitorStatisticVC];
         }
+        _monitorStatisticVC.view.frame = [pagedView bounds];
         return _monitorStatisticVC.view;
     }
 
@@ -103,7 +105,7 @@
             _emailVC.view.tag = 202;
             [self addChildViewController:_emailVC];
         }
-
+        _emailVC.view.frame = [pagedView bounds];
         return _emailVC.view;
     }
     

@@ -2,8 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "scale" : "1x",
-      "filename" : "已阅读邮件.png"
+      "scale" : "1x"
     },
     {
       "idiom" : "universal",
@@ -11,7 +10,8 @@
     },
     {
       "idiom" : "universal",
-      "scale" : "3x"
+      "scale" : "3x",
+      "filename" : "已发邮件.png"
     }
   ],
   "info" : {
