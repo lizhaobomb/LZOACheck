@@ -91,8 +91,8 @@
 
 - (UIView *)pagedView:(DDPagedScrollView *)pagedView viewForPageAtIndex:(NSUInteger)index{
     AKLog(@"%zd",index);
-    pagedView.layer.borderColor = [UIColor greenColor].CGColor;
-    pagedView.layer.borderWidth = 1;
+//    pagedView.layer.borderColor = [UIColor greenColor].CGColor;
+//    pagedView.layer.borderWidth = 1;
     if (index == _menus.count) {
         UIView *platView = (UIView *) [pagedView dequeueReusableViewWithTag:108];
         if (!platView) {

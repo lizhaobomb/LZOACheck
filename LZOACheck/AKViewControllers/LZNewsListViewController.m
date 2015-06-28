@@ -7,8 +7,10 @@
 //
 
 #import "LZNewsListViewController.h"
-#import "LZPlatformInfoViewController.h"
 #import "MJRefresh/MJRefresh.h"
+#import "LZInfoMationWebViewController.h"
+#import "LZCoreMacros.h"
+
 @interface LZNewsListViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, strong) UITableView *newsList;
@@ -82,9 +84,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     AKLog(@"%zd",indexPath.row);
-    LZPlatformInfoViewController *plat = [[LZPlatformInfoViewController alloc] init];
-    plat.view.frame = self.view.bounds;
-    [self.navigationController pushViewController:plat animated:YES];
+    NSDictionary *item = _news[indexPath.row];
+    LZInfoMationWebViewController *webViewController = [[LZInfoMationWebViewController alloc] init];
+    webViewController.newsUrl = [NSString stringWithFormat:@"%@/oa%@/%@",BASE_URL,self.url,item[@"id"]];
+    [self.navigationController pushViewController:webViewController animated:YES];
 }
 
 @end

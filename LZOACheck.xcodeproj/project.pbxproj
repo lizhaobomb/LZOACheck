@@ -44,6 +44,7 @@
 		04C361651B04D6BA00E08865 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C361621B04D6BA00E08865 /* UIViewExt.m */; };
 		04C361661B04D6BA00E08865 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C361621B04D6BA00E08865 /* UIViewExt.m */; };
 		04DAE9791B3EB3E300CE30D5 /* LZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DAE9781B3EB3E300CE30D5 /* LZNavigationController.m */; };
+		04DDCB601B3F90B200F0A1B5 /* LZInfoMationWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DDCB5F1B3F90B200F0A1B5 /* LZInfoMationWebViewController.m */; };
 		04F43C111B0A0AE500ED2969 /* LZUserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F43C101B0A0AE500ED2969 /* LZUserDataModel.m */; };
 		04F43C121B0A0AE500ED2969 /* LZUserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F43C101B0A0AE500ED2969 /* LZUserDataModel.m */; };
 		04F43C151B0A155D00ED2969 /* LZSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F43C141B0A155D00ED2969 /* LZSettings.m */; };
@@ -128,6 +129,8 @@
 		04C361621B04D6BA00E08865 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
 		04DAE9771B3EB3E300CE30D5 /* LZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZNavigationController.h; sourceTree = "<group>"; };
 		04DAE9781B3EB3E300CE30D5 /* LZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZNavigationController.m; sourceTree = "<group>"; };
+		04DDCB5E1B3F90B200F0A1B5 /* LZInfoMationWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZInfoMationWebViewController.h; sourceTree = "<group>"; };
+		04DDCB5F1B3F90B200F0A1B5 /* LZInfoMationWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZInfoMationWebViewController.m; sourceTree = "<group>"; };
 		04F43C0F1B0A0AE500ED2969 /* LZUserDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZUserDataModel.h; sourceTree = "<group>"; };
 		04F43C101B0A0AE500ED2969 /* LZUserDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZUserDataModel.m; sourceTree = "<group>"; };
 		04F43C131B0A155D00ED2969 /* LZSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZSettings.h; sourceTree = "<group>"; };
@@ -315,6 +318,8 @@
 		F105021B1B3D0C770030AB5E /* AKViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				04DDCB5E1B3F90B200F0A1B5 /* LZInfoMationWebViewController.h */,
+				04DDCB5F1B3F90B200F0A1B5 /* LZInfoMationWebViewController.m */,
 				04C1529A1B3D962C00D8FEF5 /* LZContactDetailViewController.h */,
 				04C1529B1B3D962C00D8FEF5 /* LZContactDetailViewController.m */,
 				04C152691B3D87FA00D8FEF5 /* LZAdministrativeBusinessViewController.h */,
@@ -493,6 +498,7 @@
 				0463F93E1B3C331900417300 /* Contact.m in Sources */,
 				048FB9DC1B0646E400554E99 /* DDPagedScrollView.m in Sources */,
 				04C1528F1B3D87FA00D8FEF5 /* LZNewsListViewController.m in Sources */,
+				04DDCB601B3F90B200F0A1B5 /* LZInfoMationWebViewController.m in Sources */,
 				04C152901B3D87FA00D8FEF5 /* LZPlatformInfoViewController.m in Sources */,
 				04F43C111B0A0AE500ED2969 /* LZUserDataModel.m in Sources */,
 				04C152881B3D87FA00D8FEF5 /* LZContactViewController.m in Sources */,

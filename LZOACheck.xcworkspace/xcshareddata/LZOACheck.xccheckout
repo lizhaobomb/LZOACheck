@@ -10,14 +10,14 @@
 	<string>LZOACheck</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>E4B0D7E0143B1BD6C5064DF0E2A1ADB158A85A74</key>
+		<key>32390277E8A85A84820E789F20BD61F61444646A</key>
 		<string>https://github.com/lizhaobomb/LZOACheck.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>LZOACheck.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>E4B0D7E0143B1BD6C5064DF0E2A1ADB158A85A74</key>
+		<key>32390277E8A85A84820E789F20BD61F61444646A</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>E4B0D7E0143B1BD6C5064DF0E2A1ADB158A85A74</string>
+	<string>32390277E8A85A84820E789F20BD61F61444646A</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>E4B0D7E0143B1BD6C5064DF0E2A1ADB158A85A74</string>
+			<string>32390277E8A85A84820E789F20BD61F61444646A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>LZOACheck</string>
 		</dict>
