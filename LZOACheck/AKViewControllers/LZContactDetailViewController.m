@@ -47,7 +47,7 @@
     UILabel *nameLbl = [[UILabel alloc] initWithFrame:CGRectMake(avatar.right + 12, avatar.top + 12, 100, 20)];
     nameLbl.font = [UIFont systemFontOfSize:20];
     nameLbl.textColor = [UIColor whiteColor];
-    nameLbl.text = _contact.loginName;
+    nameLbl.text = _contact.name;
     [tableHeader addSubview:nameLbl];
     
     UILabel *genderLbl = [[UILabel alloc] initWithFrame:CGRectMake(nameLbl.left, nameLbl.bottom + 12, 100, 15)];
@@ -78,7 +78,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 4;
+    return 6;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -126,25 +126,61 @@
             [cell.contentView addSubview:[self phoneAndSmsView]];
         }
             break;
+            
         case 1:{
             cell.textLabel.text = _contact.telephone1;
             cell.imageView.image = [UIImage imageNamed:@"telephone"];
         }
             break;
+            
         case 2:{
+            cell.textLabel.text = @"职位";
+            cell.imageView.image = [UIImage imageNamed:@"postion"];
+        }
+            break;
+            
+        case 3:{
             cell.textLabel.text = _contact.address;
             cell.imageView.image = [UIImage imageNamed:@"address"];
         }
             break;
-        case 3:{
+            
+        case 4:{
+            cell.textLabel.text = @"办公室";
+            cell.imageView.image = [UIImage imageNamed:@"office"];
+        }
+            break;
+
+        case 5:{
             cell.textLabel.text = _contact.email;
             cell.imageView.image = [UIImage imageNamed:@"email"];
+            [cell.contentView addSubview:[self emailView]];
         }
+            break;
+
 
             
         default:
             break;
     }
+}
+
+- (UIView *)emailView {
+    UIView *emailView = [[UIView alloc] init];
+    
+    UIButton *sendEmailBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    sendEmailBtn.frame = CGRectMake(0, 0, 100/3, 100/3);
+    [sendEmailBtn setBackgroundImage:[UIImage imageNamed:@"at"] forState:UIControlStateNormal];
+    sendEmailBtn.center = CGPointMake(sendEmailBtn.center.x, 50/2);
+    [sendEmailBtn addTarget:self action:@selector(sendEmail) forControlEvents:UIControlEventTouchUpInside];
+    [emailView addSubview:sendEmailBtn];
+    
+    emailView.frame = CGRectMake(self.view.width- 100/3 - 47/3, 0, sendEmailBtn.width, 50);
+    return emailView;
+}
+
+- (void)sendEmail {
+    
 }
 
 @end

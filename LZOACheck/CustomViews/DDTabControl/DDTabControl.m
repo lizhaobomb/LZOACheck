@@ -160,7 +160,7 @@
         _bgImgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, frame.size.width, frame.size.height)];
         _bgImgView.layer.cornerRadius = 5;
         _bgImgView.layer.masksToBounds = YES;
-        _bgImgView.backgroundColor = [UIColor redColor];
+        _bgImgView.backgroundColor = MAIN_COLOR;
         [self addSubview:_bgImgView];
 
         

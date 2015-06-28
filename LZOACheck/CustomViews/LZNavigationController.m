@@ -18,6 +18,14 @@
     [super viewDidLoad];
     self.navigationBar.barTintColor = UIColorFromRGB(0xcc3230);
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[self rightBarButton]];
+}
+
+- (UIButton *) rightBarButton {
+    UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightBtn setImage:[UIImage imageNamed:@"setting"] forState:UIControlStateNormal];
+    return rightBtn ;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0424C7411B2F1C6E0048203A /* LZNetworkingTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 0424C7401B2F1C6E0048203A /* LZNetworkingTools.m */; };
+		0446C6821B3FA0580040A2A7 /* ASFLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446C6791B3FA0580040A2A7 /* ASFLabel.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0446C6831B3FA0580040A2A7 /* ASFTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446C67B1B3FA0580040A2A7 /* ASFTableView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0446C6841B3FA0580040A2A7 /* ASFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446C67D1B3FA0580040A2A7 /* ASFTableViewCell.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0446C6851B3FA0580040A2A7 /* ASFTableViewPrivateGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446C67F1B3FA0580040A2A7 /* ASFTableViewPrivateGlobals.m */; };
+		0446C6861B3FA0580040A2A7 /* ASFTableViewPublicGlobals.m in Sources */ = {isa = PBXBuildFile; fileRef = 0446C6811B3FA0580040A2A7 /* ASFTableViewPublicGlobals.m */; };
 		0463F93B1B3C31B300417300 /* ContactGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463F93A1B3C31B300417300 /* ContactGroup.m */; };
 		0463F93E1B3C331900417300 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 0463F93D1B3C331900417300 /* Contact.m */; };
 		048FB9DA1B0646E400554E99 /* DDTabControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 048FB9D71B0646E400554E99 /* DDTabControl.m */; };
@@ -68,6 +73,16 @@
 /* Begin PBXFileReference section */
 		0424C73F1B2F1C6E0048203A /* LZNetworkingTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZNetworkingTools.h; sourceTree = "<group>"; };
 		0424C7401B2F1C6E0048203A /* LZNetworkingTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZNetworkingTools.m; sourceTree = "<group>"; };
+		0446C6781B3FA0580040A2A7 /* ASFLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFLabel.h; sourceTree = "<group>"; };
+		0446C6791B3FA0580040A2A7 /* ASFLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFLabel.m; sourceTree = "<group>"; };
+		0446C67A1B3FA0580040A2A7 /* ASFTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFTableView.h; sourceTree = "<group>"; };
+		0446C67B1B3FA0580040A2A7 /* ASFTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFTableView.m; sourceTree = "<group>"; };
+		0446C67C1B3FA0580040A2A7 /* ASFTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFTableViewCell.h; sourceTree = "<group>"; };
+		0446C67D1B3FA0580040A2A7 /* ASFTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFTableViewCell.m; sourceTree = "<group>"; };
+		0446C67E1B3FA0580040A2A7 /* ASFTableViewPrivateGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFTableViewPrivateGlobals.h; sourceTree = "<group>"; };
+		0446C67F1B3FA0580040A2A7 /* ASFTableViewPrivateGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFTableViewPrivateGlobals.m; sourceTree = "<group>"; };
+		0446C6801B3FA0580040A2A7 /* ASFTableViewPublicGlobals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASFTableViewPublicGlobals.h; sourceTree = "<group>"; };
+		0446C6811B3FA0580040A2A7 /* ASFTableViewPublicGlobals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASFTableViewPublicGlobals.m; sourceTree = "<group>"; };
 		0463F9391B3C31B300417300 /* ContactGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactGroup.h; sourceTree = "<group>"; };
 		0463F93A1B3C31B300417300 /* ContactGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactGroup.m; sourceTree = "<group>"; };
 		0463F93C1B3C331900417300 /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
@@ -166,9 +181,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0446C6771B3FA0580040A2A7 /* ASFTableView */ = {
+			isa = PBXGroup;
+			children = (
+				0446C6781B3FA0580040A2A7 /* ASFLabel.h */,
+				0446C6791B3FA0580040A2A7 /* ASFLabel.m */,
+				0446C67A1B3FA0580040A2A7 /* ASFTableView.h */,
+				0446C67B1B3FA0580040A2A7 /* ASFTableView.m */,
+				0446C67C1B3FA0580040A2A7 /* ASFTableViewCell.h */,
+				0446C67D1B3FA0580040A2A7 /* ASFTableViewCell.m */,
+				0446C67E1B3FA0580040A2A7 /* ASFTableViewPrivateGlobals.h */,
+				0446C67F1B3FA0580040A2A7 /* ASFTableViewPrivateGlobals.m */,
+				0446C6801B3FA0580040A2A7 /* ASFTableViewPublicGlobals.h */,
+				0446C6811B3FA0580040A2A7 /* ASFTableViewPublicGlobals.m */,
+			);
+			path = ASFTableView;
+			sourceTree = "<group>";
+		};
 		048FB9D41B0646A100554E99 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				0446C6771B3FA0580040A2A7 /* ASFTableView */,
 				04DAE9771B3EB3E300CE30D5 /* LZNavigationController.h */,
 				04DAE9781B3EB3E300CE30D5 /* LZNavigationController.m */,
 				04C152941B3D881600D8FEF5 /* HeadView.m */,
@@ -494,12 +527,16 @@
 				04C361631B04D6BA00E08865 /* UIImage+ImageFrameCategory.m in Sources */,
 				0424C7411B2F1C6E0048203A /* LZNetworkingTools.m in Sources */,
 				04C1528D1B3D87FA00D8FEF5 /* LZLoginViewController.m in Sources */,
+				0446C6841B3FA0580040A2A7 /* ASFTableViewCell.m in Sources */,
 				04C152891B3D87FA00D8FEF5 /* LZEmaiDetailViewController.m in Sources */,
+				0446C6831B3FA0580040A2A7 /* ASFTableView.m in Sources */,
 				0463F93E1B3C331900417300 /* Contact.m in Sources */,
 				048FB9DC1B0646E400554E99 /* DDPagedScrollView.m in Sources */,
 				04C1528F1B3D87FA00D8FEF5 /* LZNewsListViewController.m in Sources */,
+				0446C6861B3FA0580040A2A7 /* ASFTableViewPublicGlobals.m in Sources */,
 				04DDCB601B3F90B200F0A1B5 /* LZInfoMationWebViewController.m in Sources */,
 				04C152901B3D87FA00D8FEF5 /* LZPlatformInfoViewController.m in Sources */,
+				0446C6851B3FA0580040A2A7 /* ASFTableViewPrivateGlobals.m in Sources */,
 				04F43C111B0A0AE500ED2969 /* LZUserDataModel.m in Sources */,
 				04C152881B3D87FA00D8FEF5 /* LZContactViewController.m in Sources */,
 				04DAE9791B3EB3E300CE30D5 /* LZNavigationController.m in Sources */,
@@ -519,6 +556,7 @@
 				04C152861B3D87FA00D8FEF5 /* LZBaseViewController.m in Sources */,
 				04C361331B04CC9400E08865 /* main.m in Sources */,
 				04C1528A1B3D87FA00D8FEF5 /* LZEmailListViewController.m in Sources */,
+				0446C6821B3FA0580040A2A7 /* ASFLabel.m in Sources */,
 				04C152871B3D87FA00D8FEF5 /* LZBusinessQueryViewController.m in Sources */,
 				0463F93B1B3C31B300417300 /* ContactGroup.m in Sources */,
 			);

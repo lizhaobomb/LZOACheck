@@ -110,7 +110,7 @@
         [tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
     }
     
-    cell.textLabel.text = contact.loginName;
+    cell.textLabel.text = contact.name;
     return cell;
 }
 
