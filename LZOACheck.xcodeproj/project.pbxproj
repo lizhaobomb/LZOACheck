@@ -39,6 +39,7 @@
 		04C152921B3D87FA00D8FEF5 /* LZWriteEmailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C152841B3D87FA00D8FEF5 /* LZWriteEmailViewController.m */; };
 		04C152961B3D881600D8FEF5 /* HeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C152941B3D881600D8FEF5 /* HeadView.m */; };
 		04C1529C1B3D962C00D8FEF5 /* LZContactDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C1529B1B3D962C00D8FEF5 /* LZContactDetailViewController.m */; };
+		04C27DD91B3FE7C1000ED3F6 /* LZUserInfoMationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C27DD81B3FE7C1000ED3F6 /* LZUserInfoMationViewController.m */; };
 		04C361331B04CC9400E08865 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C361321B04CC9400E08865 /* main.m */; };
 		04C361361B04CC9400E08865 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C361351B04CC9400E08865 /* AppDelegate.m */; };
 		04C3613E1B04CC9400E08865 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C3613D1B04CC9400E08865 /* Images.xcassets */; };
@@ -128,6 +129,8 @@
 		04C152951B3D881600D8FEF5 /* HeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadView.h; sourceTree = "<group>"; };
 		04C1529A1B3D962C00D8FEF5 /* LZContactDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZContactDetailViewController.h; sourceTree = "<group>"; };
 		04C1529B1B3D962C00D8FEF5 /* LZContactDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZContactDetailViewController.m; sourceTree = "<group>"; };
+		04C27DD71B3FE7C1000ED3F6 /* LZUserInfoMationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZUserInfoMationViewController.h; sourceTree = "<group>"; };
+		04C27DD81B3FE7C1000ED3F6 /* LZUserInfoMationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZUserInfoMationViewController.m; sourceTree = "<group>"; };
 		04C3612D1B04CC9400E08865 /* LZOACheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZOACheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C361311B04CC9400E08865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04C361321B04CC9400E08865 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -351,6 +354,8 @@
 		F105021B1B3D0C770030AB5E /* AKViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				04C27DD71B3FE7C1000ED3F6 /* LZUserInfoMationViewController.h */,
+				04C27DD81B3FE7C1000ED3F6 /* LZUserInfoMationViewController.m */,
 				04DDCB5E1B3F90B200F0A1B5 /* LZInfoMationWebViewController.h */,
 				04DDCB5F1B3F90B200F0A1B5 /* LZInfoMationWebViewController.m */,
 				04C1529A1B3D962C00D8FEF5 /* LZContactDetailViewController.h */,
@@ -559,6 +564,7 @@
 				0446C6821B3FA0580040A2A7 /* ASFLabel.m in Sources */,
 				04C152871B3D87FA00D8FEF5 /* LZBusinessQueryViewController.m in Sources */,
 				0463F93B1B3C31B300417300 /* ContactGroup.m in Sources */,
+				04C27DD91B3FE7C1000ED3F6 /* LZUserInfoMationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

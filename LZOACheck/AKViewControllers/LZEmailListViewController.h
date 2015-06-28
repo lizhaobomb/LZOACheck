@@ -14,7 +14,7 @@ typedef enum : NSUInteger {
     TYPE_SENDED,
 } PageType;
 
-@interface LZEmailListViewController : UIViewController
+@interface LZEmailListViewController : LZBaseViewController
 
 @property(nonatomic, assign) PageType pageType;
 

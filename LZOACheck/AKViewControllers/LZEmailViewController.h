@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LZBaseViewController.h"
 
-@interface LZEmailViewController : UIViewController
+@interface LZEmailViewController : LZBaseViewController
 
 @end

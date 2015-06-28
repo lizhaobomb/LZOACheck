@@ -18,6 +18,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"address"] style:UIBarButtonItemStylePlain target:self action:@selector(settings)];
+    self.navigationItem.rightBarButtonItem = rightItem;
+}
+
+- (void)settings {
+    
 }
 
 - (void)didReceiveMemoryWarning {
