@@ -9,6 +9,7 @@
 #import "LZContactDetailViewController.h"
 #import "Contact.h"
 #import <MessageUI/MessageUI.h>
+#import "LZWriteEmailViewController.h"
 @interface LZContactDetailViewController () <UITableViewDataSource, UITableViewDelegate,MFMessageComposeViewControllerDelegate> {
     UITableView *_contactDetailList;
 }
@@ -28,6 +29,7 @@
 
 
 - (void)initContentView {
+    self.title = @"联系人详情";
     _contactDetailList = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height) style:UITableViewStylePlain];
     _contactDetailList.delegate = self;
     _contactDetailList.dataSource = self;
@@ -134,7 +136,7 @@
             break;
             
         case 2:{
-            cell.textLabel.text = @"职位";
+            cell.textLabel.text = _contact.loginName;
             cell.imageView.image = [UIImage imageNamed:@"postion"];
         }
             break;
@@ -146,13 +148,13 @@
             break;
             
         case 4:{
-            cell.textLabel.text = @"办公室";
+            cell.textLabel.text = @"无";
             cell.imageView.image = [UIImage imageNamed:@"office"];
         }
             break;
 
         case 5:{
-            cell.textLabel.text = _contact.email;
+            cell.textLabel.text = _contact.email1;
             cell.imageView.image = [UIImage imageNamed:@"email"];
             [cell.contentView addSubview:[self emailView]];
         }
@@ -180,7 +182,9 @@
 }
 
 - (void)sendEmail {
-    
+    LZWriteEmailViewController *writeEmailVC = [[LZWriteEmailViewController alloc] init];
+    writeEmailVC.selectContacts = [NSArray arrayWithObject:_contact];
+    [self.navigationController pushViewController:writeEmailVC animated:YES];
 }
 
 @end

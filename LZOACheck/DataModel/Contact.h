@@ -11,7 +11,7 @@
 @interface Contact : NSObject
 
 @property (nonatomic, strong) NSString *address;
-@property (nonatomic, strong) NSString *email;
+@property (nonatomic, strong) NSString *email1;
 @property (nonatomic, strong) NSNumber *userId;
 @property (nonatomic, strong) NSString *loginName;
 @property (nonatomic, strong) NSString *mobile1;

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 #import "LZBaseViewController.h"
 @interface LZWriteEmailViewController : LZBaseViewController
-
+@property (nonatomic, strong) NSArray *selectContacts;
 @end

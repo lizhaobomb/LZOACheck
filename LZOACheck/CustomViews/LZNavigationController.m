@@ -24,7 +24,9 @@
 
 - (UIButton *) rightBarButton {
     UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [rightBtn setImage:[UIImage imageNamed:@"setting"] forState:UIControlStateNormal];
+    rightBtn.frame = CGRectMake(0, 0, 30, 30);
+    [rightBtn setTitle:@"设置" forState:UIControlStateNormal];
+    [rightBtn setImage:[UIImage imageNamed:@"address"] forState:UIControlStateNormal];
     return rightBtn ;
 }
 

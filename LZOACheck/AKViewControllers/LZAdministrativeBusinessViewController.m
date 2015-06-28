@@ -49,7 +49,7 @@
     
     _tabControl.itemTitles = @[@"行政事项",@"监察统计", @"邮件", @"通讯录"];
     
-    _tabControl.backgroundColor = UIColorFromRGB(0xededed);
+    _tabControl.backgroundColor = MENU_COLOR;
     [_tabControl addTarget:self action:@selector(controlValueChanged:) forControlEvents:UIControlEventValueChanged];
     
     

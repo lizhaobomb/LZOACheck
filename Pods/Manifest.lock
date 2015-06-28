@@ -20,6 +20,7 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - DateTools (1.6.1)
   - MBProgressHUD (0.9.1)
   - MJExtension (2.3.6)
   - MJRefresh (2.0.4)
@@ -30,6 +31,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - DateTools
   - MBProgressHUD
   - MJExtension
   - MJRefresh
@@ -38,10 +40,11 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  DateTools: 9bcc89e4f2f9004d8a7a2bd1b49269cf78968e65
   MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
   MJExtension: eb9d381740563b520fbabdfa6caf92d666314467
   MJRefresh: ea153717001d3c02444bd22b75c111d2937d2104
   RDVTabBarController: 67794f7a7a37f8e32f046f85ac67d06ab92d624a
   SDWebImage: 71b7cdc1d1721d6a82ed62889030225f2c249e29
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.37.1

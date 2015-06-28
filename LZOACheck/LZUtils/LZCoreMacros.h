@@ -56,6 +56,8 @@
 #define MAIN_COLOR          UIColorFromRGB(0xcc3230)
 #define BORDER_COLOR        UIColorFromRGB(0xcccccc)
 #define SEPERATOR_COLOR     UIColorFromRGB(0xe4e4e4)
+#define MENU_COLOR          UIColorFromRGB(0xededed)
+
 #define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #endif

@@ -15,7 +15,6 @@
 #import "LZNavigationController.h"
 #import "Contact.h"
 @interface LZWriteEmailViewController () {
-    NSArray *_selectContacts;
     UITextField *_toUserField;
 }
 
@@ -26,6 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initContentView];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self updateSelectContacts];
 }
 
 - (void)initContentView {
