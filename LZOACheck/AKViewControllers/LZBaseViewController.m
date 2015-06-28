@@ -18,8 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
-    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"address"] style:UIBarButtonItemStylePlain target:self action:@selector(settings)];
-    self.navigationItem.rightBarButtonItem = rightItem;
+    UIButton *bgBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    bgBtn.frame = self.view.bounds;
+    [bgBtn addTarget:self action:@selector(hideKeyboard) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:bgBtn];
 }
 
 - (void)settings {
@@ -30,6 +32,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)hideKeyboard {
+    [self.view endEditing:YES];
+}
+
 
 /*
 #pragma mark - Navigation

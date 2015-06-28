@@ -71,9 +71,9 @@
 
 - (void)initContentView {
     _todoList = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
-//    _todoList.backgroundColor = [UIColor redColor];
     _todoList.delegate = self;
     _todoList.dataSource = self;
+    _todoList.tableFooterView = [[UIView alloc] init];
     [self.view addSubview:_todoList];
 }
 

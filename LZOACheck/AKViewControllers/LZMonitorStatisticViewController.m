@@ -70,7 +70,7 @@
 - (void)initGridView {
     
     UIView *dateView = [[UIView alloc] initWithFrame:CGRectMake(0, OFFSET_N, ScreenWidth, 45)];
-    dateView.backgroundColor = MAIN_COLOR;
+    dateView.backgroundColor = TEXT_COLOR;
     _startDate = [[UITextField alloc] initWithFrame:CGRectMake(5 , 5, 120, 35)];
     _startDate.borderStyle = UITextBorderStyleRoundedRect;
     _startDate.text = @"2015-06-01";
@@ -92,6 +92,8 @@
     UIButton *queryBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     queryBtn.frame = CGRectMake(_endDate.right + 5, _endDate.top, 50, _endDate.height);
     [queryBtn setTitle:@"查询" forState:UIControlStateNormal];
+    queryBtn.layer.cornerRadius = 2;
+    queryBtn.backgroundColor = MAIN_COLOR;
     [queryBtn addTarget:self action:@selector(query) forControlEvents:UIControlEventTouchUpInside];
     [dateView addSubview: queryBtn];
     [self.view addSubview:dateView];

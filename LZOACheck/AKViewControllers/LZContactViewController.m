@@ -49,17 +49,20 @@
     }
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    if (self.pageType == ContactPageTypeEmail) {
+        _contactList.height = self.view.height;
+    } else {
+//        _contactList.height = self.view.height - 44- 64 - 49;
+    }
+}
+
 - (void)cancel {
     if (self.selectContactsBlock) {
         self.selectContactsBlock(_selectedContacts);
     }
     [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    AKLog(@"3333333333333");
-
 }
 
 - (void)didReceiveMemoryWarning {

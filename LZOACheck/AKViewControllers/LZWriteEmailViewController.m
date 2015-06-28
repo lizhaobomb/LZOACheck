@@ -32,6 +32,7 @@
 }
 
 - (void)initContentView {
+    
     UILabel *toUser = [[UILabel alloc] initWithFrame:CGRectMake(OFFSET_N, 64 + OFFSET_12, 50, 20)];
     toUser.text = @"收件人";
     toUser.textColor = TEXT_COLOR;
@@ -90,6 +91,7 @@
     [sendBtn setBackgroundColor:[UIColor redColor]];
     [sendBtn addTarget:self action:@selector(sendEmail:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:sendBtn];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -137,5 +139,6 @@
     
     _toUserField.text = mutName;
 }
+
 
 @end

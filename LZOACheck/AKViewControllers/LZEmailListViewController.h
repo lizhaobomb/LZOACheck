@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LZBaseViewController.h"
 
 typedef enum : NSUInteger {
     TYPE_UNREAD,

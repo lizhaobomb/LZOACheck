@@ -131,6 +131,7 @@
 		04C1529B1B3D962C00D8FEF5 /* LZContactDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZContactDetailViewController.m; sourceTree = "<group>"; };
 		04C27DD71B3FE7C1000ED3F6 /* LZUserInfoMationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LZUserInfoMationViewController.h; sourceTree = "<group>"; };
 		04C27DD81B3FE7C1000ED3F6 /* LZUserInfoMationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LZUserInfoMationViewController.m; sourceTree = "<group>"; };
+		04C27DDA1B3FEEEA000ED3F6 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		04C3612D1B04CC9400E08865 /* LZOACheck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LZOACheck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C361311B04CC9400E08865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04C361321B04CC9400E08865 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -599,6 +600,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				04C361401B04CC9400E08865 /* Base */,
+				04C27DDA1B3FEEEA000ED3F6 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";

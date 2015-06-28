@@ -30,9 +30,8 @@
 }
 
 - (void)initContentView {
-    _contentWeb = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    _contentWeb = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, ScreenHeight - 49)];
     _contentWeb.delegate = self;
-    _contentWeb.backgroundColor = [UIColor cyanColor];
     
     [_contentWeb loadHTMLString:self.mainBody baseURL:nil];
     [self.view addSubview:_contentWeb];

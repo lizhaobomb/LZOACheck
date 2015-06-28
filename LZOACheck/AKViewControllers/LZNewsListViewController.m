@@ -54,10 +54,10 @@
     _newsList.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleTopMargin;
     [self.view addSubview:_newsList];
 
-    _newsList.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        // 进入刷新状态后会自动调用这个block
-        [self requestData];
-    }];
+//    _newsList.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+//        // 进入刷新状态后会自动调用这个block
+//        [self requestData];
+//    }];
 }
 
 - (void)didReceiveMemoryWarning {
