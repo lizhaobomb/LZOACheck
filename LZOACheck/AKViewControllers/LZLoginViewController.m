@@ -20,7 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor orangeColor];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(back:)];
     [self initContentView];
 }
@@ -41,14 +40,29 @@
 }
 
 - (void) initContentView {
-    _userNameField = [[UITextField alloc] initWithFrame:CGRectMake(OFFSET_12, OFFSET_20+64, 200, 30)];
+    self.view.backgroundColor = [UIColor whiteColor];
+    UILabel *userNameLbl = [[UILabel alloc] initWithFrame:CGRectMake(OFFSET_N, OFFSET_20 + 64, 100, 30)];
+    userNameLbl.textColor = TEXT_COLOR;
+    userNameLbl.font = FONT_14;
+    userNameLbl.text = @"用户名：";
+    userNameLbl.textAlignment = NSTextAlignmentRight;
+    [self.view addSubview:userNameLbl];
+    
+    _userNameField = [[UITextField alloc] initWithFrame:CGRectMake(userNameLbl.right + 5, userNameLbl.top, 200, 30)];
     _userNameField.borderStyle = UITextBorderStyleRoundedRect;
     _userNameField.placeholder = @"请输入您的用户名";
     _userNameField.delegate = self;
     _userNameField.text = @"admin";
     [self.view addSubview:_userNameField];
     
-    _pwdField = [[UITextField alloc] initWithFrame:CGRectMake(OFFSET_12, _userNameField.bottom + OFFSET_12, 200, 30)];
+    UILabel *pwdLbl = [[UILabel alloc] initWithFrame:CGRectMake(OFFSET_N, _userNameField.bottom + OFFSET_N, 100, 30)];
+    pwdLbl.textColor = TEXT_COLOR;
+    pwdLbl.font = FONT_14;
+    pwdLbl.text = @"密码：";
+    pwdLbl.textAlignment = NSTextAlignmentRight;
+    [self.view addSubview:pwdLbl];
+    
+    _pwdField = [[UITextField alloc] initWithFrame:CGRectMake(pwdLbl.right + 5, pwdLbl.top, 200, 30)];
     _pwdField.borderStyle = UITextBorderStyleRoundedRect;
     _pwdField.placeholder = @"请输入您的密码";
     _pwdField.secureTextEntry = YES;
@@ -56,9 +70,11 @@
     _pwdField.text = @"123456";
     [self.view addSubview:_pwdField];
     
-    UIButton *loginBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    loginBtn.frame = CGRectMake(OFFSET_12, ScreenHeight - 45, ScreenWidth - OFFSET_12 * 2, 40);
+    UIButton *loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    loginBtn.frame = CGRectMake(OFFSET_12,_pwdField.bottom+OFFSET_N, ScreenWidth - OFFSET_12 * 2, 40);
     [loginBtn addTarget:self action:@selector(loginClicked:) forControlEvents:UIControlEventTouchUpInside];
+    loginBtn.layer.cornerRadius = 2;
+    loginBtn.backgroundColor = MAIN_COLOR;
     [loginBtn setTitle:@"登录" forState:UIControlStateNormal];
     [self.view addSubview:loginBtn];
 }

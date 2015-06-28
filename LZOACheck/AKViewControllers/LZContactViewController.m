@@ -36,6 +36,7 @@
 }
 
 - (void)initContentView {
+    self.title = @"联系人";
     _contactList = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, self.view.height - 44- 64 - 49)];
     _contactList.delegate = self;
     _contactList.dataSource = self;

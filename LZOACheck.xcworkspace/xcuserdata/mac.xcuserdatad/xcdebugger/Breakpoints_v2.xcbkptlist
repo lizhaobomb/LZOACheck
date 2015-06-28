@@ -86,32 +86,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "LZOACheck/AKViewControllers/LZContactDetailViewController.m"
-            timestampString = "457027538.377311"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
-            landmarkName = "-dialNum"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LZOACheck/AKViewControllers/LZContactViewController.m"
-            timestampString = "457106452.2159"
+            timestampString = "457171722.307007"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-cancel"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
+            landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -121,13 +105,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LZOACheck/AKViewControllers/LZContactViewController.m"
-            timestampString = "457106452.2159"
+            filePath = "LZOACheck/AKViewControllers/LZMonitorStatisticViewController.m"
+            timestampString = "457170003.125192"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "110"
-            endingLineNumber = "110"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            startingLineNumber = "177"
+            endingLineNumber = "177"
+            landmarkName = "-allDateBeginStartDate:endDate:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
