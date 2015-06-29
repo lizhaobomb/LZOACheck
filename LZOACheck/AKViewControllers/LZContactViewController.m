@@ -37,16 +37,26 @@
 
 - (void)initContentView {
     self.title = @"联系人";
-    _contactList = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, self.view.height - 44- 64 - 49)];
+    _contactList = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, self.view.height - 44 - 64 - 49)];
     _contactList.delegate = self;
     _contactList.dataSource = self;
     [self.view addSubview:_contactList];
     
     if (self.pageType == ContactPageTypeEmail) {
         self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel)];
+        
+        self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(finish)];
+        
         _contactList.editing = YES;
         _contactList.allowsMultipleSelectionDuringEditing = YES;
     }
+}
+
+- (void)finish {
+    if (self.selectContactsBlock) {
+        self.selectContactsBlock(_selectedContacts);
+    }
+    [self cancel];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -59,9 +69,6 @@
 }
 
 - (void)cancel {
-    if (self.selectContactsBlock) {
-        self.selectContactsBlock(_selectedContacts);
-    }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

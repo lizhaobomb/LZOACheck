@@ -28,7 +28,7 @@
 
 
 - (void)initContentView {
-    _web = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 44)];
+    _web = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight - 64 -44)];
     [self.view addSubview:_web];
     _newsUrl = [_newsUrl stringByReplacingOccurrencesOfString:@"/list/" withString:@"/detail/"];
     [_web loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:_newsUrl]]];

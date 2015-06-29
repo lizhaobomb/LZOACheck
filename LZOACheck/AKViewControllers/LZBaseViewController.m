@@ -22,6 +22,9 @@
     bgBtn.frame = self.view.bounds;
     [bgBtn addTarget:self action:@selector(hideKeyboard) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:bgBtn];
+    
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
 - (void)settings {

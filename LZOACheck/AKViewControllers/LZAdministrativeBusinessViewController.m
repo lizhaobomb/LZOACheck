@@ -44,7 +44,7 @@
 
 - (void)initContentView {
 
-    _tabControl = [[DDTabControl alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, 44)];
+    _tabControl = [[DDTabControl alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
     [self.view addSubview:_tabControl];
     
     _tabControl.itemTitles = @[@"行政事项",@"监察统计", @"邮件", @"通讯录"];
@@ -53,7 +53,7 @@
     [_tabControl addTarget:self action:@selector(controlValueChanged:) forControlEvents:UIControlEventValueChanged];
     
     
-    _scrollView = [[DDPagedScrollView alloc] initWithFrame:CGRectMake(0, 108, self.view.frame.size.width, self.view.frame.size.height - 108 - 49)];
+    _scrollView = [[DDPagedScrollView alloc] initWithFrame:CGRectMake(0, 44, self.view.frame.size.width, self.view.frame.size.height - 44 -49 )];
     _scrollView.delegate = self;
     _scrollView.continuous = YES;
     [self.view addSubview:_scrollView];

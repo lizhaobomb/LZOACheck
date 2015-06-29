@@ -53,7 +53,7 @@
 }
 
 - (void)initContentView {
-    _emailList = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, ScreenHeight - 49)];
+    _emailList = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, ScreenHeight -64-49)];
     _emailList.delegate = self;
     _emailList.dataSource = self;
     [self.view addSubview:_emailList];

@@ -70,10 +70,10 @@
 }
 
 - (void)initContentView {
-    _todoList = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height)];
+    _todoList = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height-44-49)];
     _todoList.delegate = self;
     _todoList.dataSource = self;
-    _todoList.tableFooterView = [[UIView alloc] init];
+//    _todoList.tableFooterView = [[UIView alloc] init];
     [self.view addSubview:_todoList];
 }
 

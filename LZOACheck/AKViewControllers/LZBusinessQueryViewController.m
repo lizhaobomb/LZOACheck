@@ -41,7 +41,7 @@
 }
 
 - (void)initContentView {
-    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 64, self.view.width, 64)];
+    UIView *topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, 64)];
     topView.backgroundColor = [UIColor whiteColor];
     _cardField = [[UITextField alloc] initWithFrame:CGRectMake(OFFSET_12, (64-30)/2, ScreenWidth - 120, 30)];
     _cardField.borderStyle = UITextBorderStyleNone;

@@ -20,6 +20,7 @@
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
     self.navigationBar.tintColor = [UIColor whiteColor];
 //    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[self rightBarButton]];
+
 }
 
 - (UIButton *) rightBarButton {
