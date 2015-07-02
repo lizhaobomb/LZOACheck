@@ -113,6 +113,7 @@
     [[LZNetworkTools sharedLZNetworkTools] POST:@"/oa/phone/getByInsId" parameters:@{@"procInsId":_cardField.text} success:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"%@",responseObject);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        [[LZAlertUtils sharedLZAlertUtils] toggleMessage:error.localizedDescription];
         NSLog(@"%@",error);
     }];
 }

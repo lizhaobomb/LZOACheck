@@ -45,6 +45,8 @@
         [self configViewWithResponseObject:responseObject];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         NSLog(@"获取邮件数量失败：%@",error);
+        [[LZAlertUtils sharedLZAlertUtils] toggleMessage:error.localizedDescription];
+
     }];
 }
 

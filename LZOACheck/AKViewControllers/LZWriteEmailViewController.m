@@ -103,7 +103,7 @@
     [[LZNetworkTools sharedLZNetworkTools] POST:@"/oa/phone/sendMail" parameters:@{@"userId":@"16",@"title":@"title",@"content":@"content",@"receiverIds":@"1,2,3,4,5"} success:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"%@",responseObject);
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        NSLog(@"%@",error);
+        [[LZAlertUtils sharedLZAlertUtils] toggleMessage:error.localizedDescription];
     }];
 }
 

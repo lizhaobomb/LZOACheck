@@ -90,6 +90,7 @@
         _contacts = tmp;
         [_contactList reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        [[LZAlertUtils sharedLZAlertUtils] toggleMessage:error.localizedDescription];
         AKLog(@"%@",error);
     }];
 }

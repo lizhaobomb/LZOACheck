@@ -61,6 +61,8 @@
         _news = responseObject[@"items"];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         AKLog(@"%@",error);
+        [[LZAlertUtils sharedLZAlertUtils] toggleMessage:error.localizedDescription];
+
     }];
 }
 

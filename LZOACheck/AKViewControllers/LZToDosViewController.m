@@ -44,7 +44,7 @@
         _todos = responseObject[@"resultList"];
         [_todoList reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        AKLog(@"%@",error);
+        [[LZAlertUtils sharedLZAlertUtils] toggleMessage:error.localizedDescription];
     }];
     
     [[LZNetworkTools sharedLZNetworkTools] POST:@"/oa/phone/getFinishedTasks" parameters:@{@"userId":[LZSettings sharedLZSettings].userId,@"cp":@"1",@"ps":@"100"} success:^(NSURLSessionDataTask *task, id responseObject) {
@@ -52,7 +52,7 @@
         _dos = responseObject[@"resultList"];
         [_todoList reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        AKLog(@"%@",error);
+        [[LZAlertUtils sharedLZAlertUtils] toggleMessage:error.localizedDescription];
     }];
     
     [[LZNetworkTools sharedLZNetworkTools] POST:@"/oa/phone/getReturnedTasks" parameters:@{@"userId":[LZSettings sharedLZSettings].userId,@"cp":@"1",@"ps":@"100"} success:^(NSURLSessionDataTask *task, id responseObject) {
@@ -60,7 +60,7 @@
         _backs = responseObject[@"resultList"];
         [_todoList reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        AKLog(@"%@",error);
+        [[LZAlertUtils sharedLZAlertUtils] toggleMessage:error.localizedDescription];
     }];
 }
 

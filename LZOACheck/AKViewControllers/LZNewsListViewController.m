@@ -40,7 +40,7 @@
         _news = responseObject[@"items"];
         [_newsList reloadData];
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
-        AKLog(@"%@",error);
+        [[LZAlertUtils sharedLZAlertUtils] toggleMessage:error.localizedDescription];
     }];
     [_newsList.header endRefreshing];
 }

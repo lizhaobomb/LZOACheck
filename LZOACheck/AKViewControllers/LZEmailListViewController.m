@@ -48,6 +48,8 @@
                                             [_emailList reloadData];
                                         } failure:^(NSURLSessionDataTask *task, NSError *error) {
                                             AKLog(@"%@",error);
+                                            [[LZAlertUtils sharedLZAlertUtils] toggleMessage:error.localizedDescription];
+
                                         }];
 
 }
